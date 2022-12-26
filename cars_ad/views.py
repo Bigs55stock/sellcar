@@ -26,3 +26,12 @@ class Home(TemplateView):
 
 class About(TemplateView):
     template_name = "about.html"
+
+
+class Cars:
+    def __init__(self, make, year, model, disc, image, contact):
+        self.year = year
+        self.model = model
+        self.disc = disc
+        self.image = image
+        self.contact = contact
