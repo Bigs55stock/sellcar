@@ -20,6 +20,11 @@ class About(View):
     def get(self, request):
         return HttpResponse("About page")
 
+class Carslist(View):
+
+    def get(self, request):
+        return HttpResponse("car page")
+
 
 class Home(TemplateView):
     template_name = "home.html"
@@ -27,11 +32,8 @@ class Home(TemplateView):
 class About(TemplateView):
     template_name = "about.html"
 
+class Carslist(TemplateView):
+    template_name = "cars_list.html"
 
-class Cars:
-    def __init__(self, make, year, model, disc, image, contact):
-        self.year = year
-        self.model = model
-        self.disc = disc
-        self.image = image
-        self.contact = contact
+
+
