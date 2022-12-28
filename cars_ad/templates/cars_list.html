@@ -1,13 +1,40 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sellcars</title>
-    </head>
-    <body>
-        {% extends 'base.html' %} {% block content %}
-        <h1>cars</h1>
+       {% extends 'base.html' %} {% block content %}
+
+        <h1 class="title">Cars listed</h1>
+        
+        <form class="mb-5" method="get">
+          <div class="field has-addons">
+            <div class="control">
+             
+              <input class="input" type="text" name="name" placeholder="name" />
+            </div>
+            <div class="control">
+              <input class="button is-success" type="submit" value="Search" />
+            </div>
+          </div>
+          
+          <a class="button is-dark" href="{% url 'cars_list' %}">Clear Search</a>
+        </form>
+        <div class="gallery">
+          {% for car in cars %}
+          <a href="">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-square">
+                  <img src="{{cars.img}}" alt="{{cars.make}}" />
+                </figure>
+              </div>
+              <div class="card-header">
+                <p class="card-header-title">{{cars.make}}</p>
+              </div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        
         {% endblock %}
-    </body>
+
+  
