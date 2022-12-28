@@ -35,9 +35,12 @@ class Carslist(TemplateView):
       
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["cars"] = Cars.objects.all() 
+        make = self.request.GET.get("make")
+        if make != None:
+            context["cars"] = Cars.objects.filter(name__icontains=make)
+        else:
+            context["cars"] = Cars.objects.all()
         return context
-
    
 
    
