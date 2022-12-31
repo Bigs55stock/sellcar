@@ -1,4 +1,4 @@
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic import DetailView
 from django.shortcuts import render
 from django.views import View 
@@ -55,3 +55,10 @@ class CarCreate(CreateView):
 class CarDetail(DetailView):
     model = Cars
     template_name = "car_detail.html"
+
+
+class CarUpdate(UpdateView):
+    model = Cars
+    fields = ['year','make','model' ,'dec', 'img', 'price']
+    template_name = "car_Update.html"
+    success_url = "/cars/"
