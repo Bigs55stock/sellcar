@@ -1,10 +1,10 @@
 {% extends 'base.html' %} 
 {% block content %}
 <div class="detail__img">
-    <img src="{{car.img}}" alt="{{car.model}}" />
+    <img src="{{cars.img}}" alt="{{cars.make}}" />
 </div>
 <div class="detail__name">
-    <h1 class="title">{{car.model}}</h1>
+    <h1 class="title">{{cars.make}}</h1>
 </div>
 <div class="detail__container">
     <div class="buttons">
@@ -20,8 +20,8 @@
         </a>
     </div>
     <div class="detail__about">
-        <h4 class="title is-4">Description</h4>
-        <p>{{car.desc}}</p>
+        <h4 class="title is-4">Description:</h4>
+        <p>{{cars.desc}}</p>
     </div>
 </div>
 
