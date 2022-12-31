@@ -39,7 +39,7 @@ class Carslist(TemplateView):
         context = super().get_context_data(**kwargs)
         make = self.request.GET.get("make")
         if make != None:
-            context["cars"] = Cars.objects.filter(name__icontains=make)
+            context["cars"] = Cars.objects.filter(make__icontains=make)
         else:
             context["cars"] = Cars.objects.all()
         return context
@@ -48,7 +48,7 @@ class Carslist(TemplateView):
    
 class CarCreate(CreateView):
     model = Cars
-    fields = ['year','make','model' ,'dec', 'img', 'price']
+    fields = ['make','year','model' ,'desc', 'img', 'price']
     template_name = "car_create.html"
     success_url = "/cars/"
       
@@ -59,6 +59,6 @@ class CarDetail(DetailView):
 
 class CarUpdate(UpdateView):
     model = Cars
-    fields = ['year','make','model' ,'dec', 'img', 'price']
-    template_name = "car_Update.html"
+    fields = ['make','year','model' ,'desc', 'img', 'price']
+    template_name = "car_update.html"
     success_url = "/cars/"
