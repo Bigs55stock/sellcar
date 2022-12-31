@@ -1,4 +1,4 @@
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import DetailView
 from django.shortcuts import render
 from django.views import View 
@@ -61,4 +61,10 @@ class CarUpdate(UpdateView):
     model = Cars
     fields = ['make','year','model' ,'desc', 'img', 'price']
     template_name = "car_update.html"
+    success_url = "/cars/"
+
+
+class CarDelete(DeleteView):
+    model = Cars
+    template_name = "car_delete.html"
     success_url = "/cars/"
