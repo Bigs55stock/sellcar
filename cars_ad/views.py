@@ -1,4 +1,5 @@
 from django.views.generic.edit import CreateView
+from django.views.generic import DetailView
 from django.shortcuts import render
 from django.views import View 
 from django.http import HttpResponse
@@ -51,3 +52,6 @@ class CarCreate(CreateView):
     template_name = "car_create.html"
     success_url = "/cars/"
       
+class CarDetail(DetailView):
+    model = Cars
+    template_name = "car_detail.html"
