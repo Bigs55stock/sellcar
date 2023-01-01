@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<h1 class="title pt-5">Confirm delete will be a permanent change {{cars.make}}?</h1>
+<h1 class="title pt-5">Confirm delete will be a permanent change {{cars.year}} {{cars.make}} {{cars.model}}?</h1>
 <form method="post">
     {% csrf_token %}
     <div class="buttons">

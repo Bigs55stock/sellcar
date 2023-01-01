@@ -8,24 +8,6 @@ from .models import Cars
 # Create your views here.
 
 
-
-class Home(View):
-
-   
-    def get(self, request):
-       return HttpResponse("Homepage")
-
-class About(View):
-
-    def get(self, request):
-        return HttpResponse("About page")
-
-class Carslist(View):
-
-    def get(self, request):
-        return HttpResponse("car page")
-
-
 class Home(TemplateView):
     template_name = "home.html"
 
