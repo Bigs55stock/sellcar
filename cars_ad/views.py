@@ -44,9 +44,7 @@ class CarCreate(CreateView):
         form.instance.user = self.request.user
         return super(CarCreate, self).form_valid(form)
 
-    def get_success_url(self):
-        print(self.kwargs)
-        return reverse('car_detail', kwargs={'pk': self.object.pk})
+
       
 class CarDetail(DetailView):
     model = Cars

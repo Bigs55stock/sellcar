@@ -1,13 +1,13 @@
 .title {
-    color: white;
+    color: black;
 }
 
 h1,h2,h3 {
-    color: whitesmoke;
+    color: black;
 }
 body {
-    background-color: gray;
-    color: whitesmoke;
+    background-color: white;
+    color: black;
     min-height: 115vh;
 }
 
