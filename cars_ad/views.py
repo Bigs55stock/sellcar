@@ -36,7 +36,7 @@ class Carslist(TemplateView):
 @method_decorator(login_required, name='dispatch')
 class CarCreate(CreateView):
     model = Cars
-    fields = ['make','year','model' ,'price', 'mileage','img', 'desc','contact']
+    fields = ['make','year','model' ,'price', 'mileage','img','picture','picture1','picture2','picture3', 'desc','contact']
     template_name = "car_create.html"
     success_url = "/cars/"
 
@@ -53,7 +53,7 @@ class CarDetail(DetailView):
 
 class CarUpdate(UpdateView):
     model = Cars
-    fields = ['make','year','model' ,'price', 'mileage','img', 'desc','contact']
+    fields = ['make','year','model' ,'price', 'mileage','img','picture','picture1','picture2','picture3', 'desc','contact']
     template_name = "car_update.html"
     success_url = "/cars/"
 
