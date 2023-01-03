@@ -8,10 +8,23 @@
     </head>
     <body>
         {% extends 'base.html' %} {% block content %}
-        <h1 class="is size-1 title has-text-centered">About</h1>
-        <h2 class="is size-2 subtitle has-text-centered">First time Users</h2>
-        <h5 class="is size-7 mb-5">We hae been providing this site since 2022. Our company mission is to help users sell and buy cars listed on the site. On this site you are able to list or buy a car by contacting the ad person. Its a free site but inorder to access or sell cars you have to sign in you account. If you dont have an account you can 
-            register by clicking sign up in the upper right hand side of the page. To view or search a listing you can do that in the cars page. You can make a add a listing in make listing page.   
-        </h5>
+        <section class ="section">
+            <div class ="container">
+                <div class =columns>
+                    <div class ="column is-2 ml-6">
+                        <figure class="image is-16by16">
+                        <img src="https://i.imgur.com/4PKBYo6.png"></div>
+                    </figure>
+                    <div class ="column is-5 ml-6">
+                        <h1 class="is size-1 title has-text-centered">About</h1>
+                            <h2 class="is size-2 subtitle has-text-centered">First time Users</h2>
+                            <h5 class="is size-7 mb-5">We hae been providing this site since 2022. Our company mission is to help users sell and buy cars listed on the site. On this site you are able to list or buy a car by contacting the ad person. Its a free site but inorder to access or sell cars you have to sign in you account. If you dont have an account you can 
+                            register by clicking sign up in the upper right hand side of the page. To view or search a listing you can do that in the cars page. You can make a add a listing in make listing page.   
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
             {% endblock %}
     </body>
