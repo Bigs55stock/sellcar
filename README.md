@@ -37,7 +37,7 @@ psql
 ## Code Example
  Is a for loop that goes through cars and displays all of them (frontend). 
  
- {% for car in cars %}
+ <!-- {% for car in cars %}
           <a href="{% url 'car_detail' car.pk %}">
             <div class="card">
               <div class="card-image">
@@ -51,7 +51,7 @@ psql
                 </div>
             </div>
           </a>
-          {% endfor %}
+          {% endfor %} -->
 
 ## Testing
 App has full crud and user auth. So if all works then app is funcational.
