@@ -5,9 +5,9 @@ The site is listing your cars for sale. So the user is able to list cars that th
 
 ### wireframe
 
-[img]https://i.imgur.com/3muDkfT.png
-[img2]https://i.imgur.com/X6xajym.png
-[img3]https://i.imgur.com/pYiVJfv.png
+[img]https://i.imgur.com/3muDkfT.png <br /> 
+[img2]https://i.imgur.com/X6xajym.png <br /> 
+[img3]https://i.imgur.com/pYiVJfv.png <br /> 
 
 
 ### Prerequisites/Installing
@@ -15,10 +15,10 @@ The site is listing your cars for sale. So the user is able to list cars that th
 What things you need to install the software and how to install them
 npm i to install dependencies
 
-Need python installed
-Need pipenv installed
-Need postgres installed
-pipenv install django
+Need python  <br /> 
+Need pipenv installed <br /> 
+Need postgres installed <br /> 
+pipenv install django <br /> 
 
 
 
@@ -27,12 +27,12 @@ Used Herohu added some depencises in the django files in order to diploy
 
 
 ## Built With
-Html
-css
-python
-django
-bulma
-psql
+Html <br /> 
+css <br /> 
+python <br /> 
+django <br /> 
+bulma <br /> 
+psql <br /> 
 
 ## Code Example
  Is a for loop that goes through cars and displays all of them (frontend). 
