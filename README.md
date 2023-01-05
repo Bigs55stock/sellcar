@@ -23,7 +23,7 @@ pipenv install django <br />
 
 
 ## Deployment
-Used Herohu added some depencises in the django files in order to diploy 
+Used Herohu added some dependencies in the django files in order to deploy 
 
 
 ## Built With
